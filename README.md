@@ -1,13 +1,12 @@
-# Basic Project Project 
+# Pet Registration Project 
 
-*Using Java Basic Concepts* Day 04
+*Simple Pet Registration Project* Day 05
 
 **Java 7**
 
-* Scanner
-* String
-* Primitives
-* Switch
-* If/Else
+* Java Application
+* Maven
+   
+* Registers user's pet details into the system
 
 [James Hamilton] (jameshamilton9878@comcast.net)
