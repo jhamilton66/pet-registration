@@ -27,13 +27,18 @@ import java.util.*;
 public class PetRegistration {
 	static Scanner scanner;
 
-	static String name;
+	static String name, numPets;
 
-	static String petName, petAddress, petCity, petState, petRegPrice, petDOB;
+	static int numToRegister;
+
+	static String[] petNameArray = new String[numToRegister], petAddressArray = new String[numToRegister],
+			petCityArray = new String[numToRegister], petStateArray = new String[numToRegister],
+			petRegPriceArray = new String[numToRegister], petDOBArray = new String[numToRegister];
 
 	public static void registerPet() {
 		initApplication();
 		retrieveUserName();
+		retrieveNumberOfPets();
 		retrievePetDetails();
 		displayPetDetails();
 		exitApplication();
@@ -63,6 +68,7 @@ public class PetRegistration {
 	private static void initApplication() {
 		scanner = new Scanner(System.in);
 		System.out.println("Welcome to the Pet Registration Application");
+
 	}
 
 	private static String obtainString(String question) {
@@ -71,10 +77,20 @@ public class PetRegistration {
 
 	}
 
+	private static void retrieveNumberOfPets() {
+		System.out.println("How many Pets would you like to register today?");
+		numPets = scanner.nextLine();
+		numToRegister = Integer.parseInt(numPets);
+
+	}
+
 	/**
 	 * 
 	 */
 	private static void retrievePetDetails() {
+		for (int i = 0; i < numToRegister; i++) {
+
+		}
 		petName = obtainString("What is your pet's name:");
 		petAddress = obtainString("What is " + petName + "'s address:");
 		petCity = obtainString("What city does he live in:");
