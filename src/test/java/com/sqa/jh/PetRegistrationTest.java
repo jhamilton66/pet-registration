@@ -31,7 +31,7 @@ public class PetRegistrationTest {
 	 */
 	@Test
 	public void testRegisterPet() {
-		PetRegistration.registerPet();
+		PetRegistration.registerPets();
 	}
 
 }
